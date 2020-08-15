@@ -18,7 +18,7 @@ axios
     .get (`https://lambda-times-api.herokuapp.com/topics/`)
     .then ((res) => {
     // if get works, run callback here
-    console.log (res.data);
+    // console.log (res.data); // used to see topics
     topicArray = res.data.topics;
 
     // make a new div, style it, add text, append
