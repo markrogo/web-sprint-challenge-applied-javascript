@@ -38,7 +38,8 @@ axios
         errDiv.style.color = ('red');
         errDiv.textContent = (`${err}, unable to retrieve topics`);
         // mini stretch goal, added error message to page with some nice red text
-        topics.appendChild (errDiv);
-
+        errCon = document.querySelector ('.errors-container');
+        errCon.appendChild (errDiv);
+        topics.appendChild (errDiv); // looks better here
 
     })

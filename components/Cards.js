@@ -81,7 +81,6 @@ axios
         let newDiv = document.createElement('div');
         let head = document.createElement ('div');
         let author = document.createElement ('div');
-        // let imgCon = document.createElement ('div');
         let img = document.createElement ('img');
         let span = document.createElement ('span');
         
@@ -99,23 +98,16 @@ axios
 
 
         // append pieces (I went rogue here and just changed the templated HTML)
+        // specifically I add the span to the author div so it formats correctly
 
         author.appendChild(img);
         author.appendChild(span);
 
         newDiv.appendChild(head);
         newDiv.appendChild(author);
-        // newDiv.appendChild(span);  
 
         // append whole article
         cards.appendChild (newDiv);
     }
 
-    // div class="card">
-    //   <div class="headline">{Headline of article}</div>
-    //   <div class="author">
-    //       <img src={url of authors image} />
-    //     </div>
-    //     <span>By {author's name}</span>
-    //   </div>
-    // </div>
+   
