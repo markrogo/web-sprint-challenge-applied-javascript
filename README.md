@@ -75,9 +75,9 @@ Your finished project must include all of the following requirements:
 
 - [x] Look through the HTML code and familiarize yourself with the different sections. Some of them already exist, but some need to be filled in. DO NOT add any code to the `index.html` file itself.
 
-- [ ] Following the instructions in the `components/Header.js` file, create the Header.
+- [x] Following the instructions in the `components/Header.js` file, create the Header.
 
-- [ ] Following the instructions in the `components/Tabs.js` file, create the Tabs.
+- [x] Following the instructions in the `components/Tabs.js` file, create the Tabs.
 
 - [ ] Following the instructions in the `components/Cards.js` file, create the Cards.
 
@@ -89,7 +89,7 @@ After finishing your required elements, you can push your work further. These go
 
 - [ ] Use the tabs at the top of the page to filter articles by topic.
 - [ ] Following the instructions in the `components/Carousel.js file`, create the Carousel component.
-- [ ] Render an error message on the page for the user, if the network request to fetch articles fails.
+- [x] Render an error message on the page for the user, if the network request to fetch articles fails.
 
 ## Submission format
 
