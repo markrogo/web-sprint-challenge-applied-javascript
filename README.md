@@ -28,15 +28,26 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. What is the DOM?
 
+<!-- The DOM, or Document Object Model, gives us a way to programmatically access and manipulate a web page. It creates a tree like structure out of the HTML elements on the page and give us an interface to access those elements via JavaScript. -->
+
 2. What is an event?
+
+<!-- Events are things that happen to HTML elements. They include mouseclicks, drag and drop, mouseover, completion of page loads, etc. In short they can be created by the user or the browser itself -->
 
 3. What is an event listener?
 
+<!-- An event listener is some JS code, including functions, that can be attached to specific events on a web page, including those associated with individual elements (the user clicked on this region, the user moved the mouse onto this button) or the page itself (the page has loaded). -->
+
 4. Why would we convert a NodeList into an Array?
+
+<!-- While NodeLists allow forEach to be used, array methods like map and filter do not work on NodeLists. If we wanted to manipulate our NodeList using those, we would be well served by converting it to an array. -->
+
 
 5. What is a component?
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
+
+<!-- A component is a reusable piece of code, not entirely unlike a function. Components bring together a combination of HTML, CSS and JS in a lightweight chunk of code that we might use over and again. For example, we might build a component to create 5 buttons on a web page that differ only in their labels, but share common styling as well a function to determine what to do when they are clicked. -->
 
 ## Instructions
 
@@ -53,16 +64,16 @@ You are expected to be able to answer questions in these areas. Your responses c
 
 #### Launching the App
 
-- [ ] Navigate to the root of the project with your command line
-- [ ] Run `npm install` to download the dependencies listed in the `package.json` file
-- [ ] Run `npm start` to compile the project and serve it
-- [ ] Navigate Chrome to the URL indicated in the output of the `npm start` command
+- [x] Navigate to the root of the project with your command line
+- [x] Run `npm install` to download the dependencies listed in the `package.json` file
+- [x] Run `npm start` to compile the project and serve it
+- [x] Navigate Chrome to the URL indicated in the output of the `npm start` command
 
 ### Task 2: Project Requirements
 
 Your finished project must include all of the following requirements:
 
-- [ ] Look through the HTML code and familiarize yourself with the different sections. Some of them already exist, but some need to be filled in. DO NOT add any code to the `index.html` file itself.
+- [x] Look through the HTML code and familiarize yourself with the different sections. Some of them already exist, but some need to be filled in. DO NOT add any code to the `index.html` file itself.
 
 - [ ] Following the instructions in the `components/Header.js` file, create the Header.
 
