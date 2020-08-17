@@ -21,13 +21,21 @@
 // Use your function to create a card for each of the articles, and append each card to the DOM.
 
 let articlesArray = [];
+let jsArray = [];
+let nodeArray = [];
+let bootArray = [];
+let techArray = [];
+let jqArray = [];
+
+let currentTopic = "";
 const cards = document.querySelector('.cards-container');
 
+function buildArticles () {
 axios 
     .get (`https://lambda-times-api.herokuapp.com/articles`)
     .then ((res) => {
         // console.log ('Here is the res: ', res); // need to see data to figure it out
-        console.log (res.data.articles) // content is in here;
+        // console.log (res.data.articles) // content is in here;
         // object with 5 topic 'keys' and associated arrays of articles
         // grab all the keys
         let keys = Object.keys (res.data.articles);
@@ -52,11 +60,62 @@ axios
         articlesArray = [...jsArray, ...bootArray, ...techArray, ...jqArray, ...nodeArray];
         console.log (articlesArray);
 
+        // addAll (articlesArray);
+
+        let topics = document.querySelectorAll('.tab');
+
         articlesArray.forEach((element) => {
             makeArticle (element);
         })
+        topics.forEach ((t) => {
+            
+            t.addEventListener ('click', () => {
+                currentTopic = (t.textContent);
+                 if (currentTopic == 'reset') {
+                    currentTopic = '';
+                };
+                console.log ("current topic ", currentTopic);
+                deleteChildren ();
+                switch (currentTopic) {
+                    case 'javascript':
+                        jsArray.forEach((element) => {
+                            makeArticle (element);
+                        })
+                        break;
+                    case 'bootstrap':
+                        bootArray.forEach((element) => {
+                            makeArticle (element);
+                        })
+                        break;
+                    case 'technology':
+                        techArray.forEach((element) => {
+                            makeArticle (element);
+                        })
+                        break;
+                    case 'jquery':    
+                          
+                          jqArray.forEach((element) => {
+                            makeArticle (element);
+                        })
+                        break;
+                    case 'node.js':
+                        nodeArray.forEach((element) => {
+                            makeArticle (element);
+                        })
+                        break;
+                    
+                    default: 
+                            articlesArray.forEach((element) => {
+                            makeArticle (element);
+                        });
+            
+                
+            }
+
+
+            });
+        });
         
-    
     })
 
     .catch((err) => {
@@ -69,6 +128,16 @@ axios
     
     
     })
+
+};   
+
+
+    function deleteChildren () {
+        while (cards.firstChild) {
+            cards.removeChild(cards.firstChild);
+        }
+    };
+
     // tags each array with its topics
     function tagArticles (topicArray, topicName) {
         topicArray.forEach ((art) => {
@@ -108,6 +177,10 @@ axios
 
         // append whole article
         cards.appendChild (newDiv);
-    }
 
-   
+      
+
+
+    }
+ 
+buildArticles ();

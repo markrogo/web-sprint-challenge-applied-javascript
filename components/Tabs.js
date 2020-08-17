@@ -20,14 +20,18 @@ axios
     // if get works, run callback here
     // console.log (res.data); // used to see topics
     topicArray = res.data.topics;
-
+    topicArray.push ('see all');
     // make a new div, style it, add text, append
     
     topicArray.forEach((element) => {
         let newDiv = document.createElement ('div');
         newDiv.classList.add ('tab');
         newDiv.textContent = element;
+       
         topics.appendChild (newDiv);
+        if (newDiv.textContent === 'see all') {
+            newDiv.style.color = 'yellow';
+        };
         });
     })
     
