@@ -36,6 +36,23 @@
   }
   img {
     .width-100();
-    display: none;
+    display: block;
+    // width: 30%;
   }
+  // cribbed fade from w3 schools
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+ 
+  // .img-off {
+  //   .width-100();
+  //   display: none;
+  //   width: 30%;
+  // }
 }

@@ -28,15 +28,26 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. What is the DOM?
 
+<!-- The DOM, or Document Object Model, gives us a way to programmatically access and manipulate a web page. It creates a tree like structure out of the HTML elements on the page and give us an interface to access those elements via JavaScript. -->
+
 2. What is an event?
+
+<!-- Events are things that happen to HTML elements. They include mouseclicks, drag and drop, mouseover, completion of page loads, etc. In short they can be created by the user or the browser itself -->
 
 3. What is an event listener?
 
+<!-- An event listener is some JS code, including functions, that can be attached to specific events on a web page, including those associated with individual elements (the user clicked on this region, the user moved the mouse onto this button) or the page itself (the page has loaded). -->
+
 4. Why would we convert a NodeList into an Array?
+
+<!-- While NodeLists allow forEach to be used, array methods like map and filter do not work on NodeLists. If we wanted to manipulate our NodeList using those, we would be well served by converting it to an array. -->
+
 
 5. What is a component?
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
+
+<!-- A component is a reusable piece of code, not entirely unlike a function. Components bring together a combination of HTML, CSS and JS in a lightweight chunk of code that we might use over and again. For example, we might build a component to create 5 buttons on a web page that differ only in their labels, but share common styling as well a function to determine what to do when they are clicked. -->
 
 ## Instructions
 
@@ -44,31 +55,31 @@ You are expected to be able to answer questions in these areas. Your responses c
 
 #### Repository Set Up
 
-- [ ] Create a forked copy of this project
-- [ ] Add your team lead as collaborator on Github
-- [ ] Clone your OWN version of the repository (Not Lambda's by mistake!)
-- [ ] Create a new branch: `git checkout -b <firstName-lastName>`.
-- [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly
-- [ ] Push commits: `git push origin <firstName-lastName>`
+- [x] Create a forked copy of this project
+- [x] Add your team lead as collaborator on Github
+- [x] Clone your OWN version of the repository (Not Lambda's by mistake!)
+- [x] Create a new branch: `git checkout -b <firstName-lastName>`.
+- [x] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly
+- [x] Push commits: `git push origin <firstName-lastName>`
 
 #### Launching the App
 
-- [ ] Navigate to the root of the project with your command line
-- [ ] Run `npm install` to download the dependencies listed in the `package.json` file
-- [ ] Run `npm start` to compile the project and serve it
-- [ ] Navigate Chrome to the URL indicated in the output of the `npm start` command
+- [x] Navigate to the root of the project with your command line
+- [x] Run `npm install` to download the dependencies listed in the `package.json` file
+- [x] Run `npm start` to compile the project and serve it
+- [x] Navigate Chrome to the URL indicated in the output of the `npm start` command
 
 ### Task 2: Project Requirements
 
 Your finished project must include all of the following requirements:
 
-- [ ] Look through the HTML code and familiarize yourself with the different sections. Some of them already exist, but some need to be filled in. DO NOT add any code to the `index.html` file itself.
+- [x] Look through the HTML code and familiarize yourself with the different sections. Some of them already exist, but some need to be filled in. DO NOT add any code to the `index.html` file itself.
 
-- [ ] Following the instructions in the `components/Header.js` file, create the Header.
+- [x] Following the instructions in the `components/Header.js` file, create the Header.
 
-- [ ] Following the instructions in the `components/Tabs.js` file, create the Tabs.
+- [x] Following the instructions in the `components/Tabs.js` file, create the Tabs.
 
-- [ ] Following the instructions in the `components/Cards.js` file, create the Cards.
+- [x] Following the instructions in the `components/Cards.js` file, create the Cards.
 
 In your solution, it is essential that you follow best practices and produce clean and professional results. You will be scored on your adherence to proper code style and good organization. Schedule time to review, refine, and assess your work and perform basic professional polishing including spell-checking and grammar-checking on your work. It is better to submit a challenge that meets MVP than one that attempts too much and does not.
 
@@ -77,13 +88,13 @@ In your solution, it is essential that you follow best practices and produce cle
 After finishing your required elements, you can push your work further. These goals may or may not be things you have learned in this module but they build on the material you just studied. Time allowing, stretch your limits and see if you can deliver on the following optional goals:
 
 - [ ] Use the tabs at the top of the page to filter articles by topic.
-- [ ] Following the instructions in the `components/Carousel.js file`, create the Carousel component.
-- [ ] Render an error message on the page for the user, if the network request to fetch articles fails.
+- [x] Following the instructions in the `components/Carousel.js file`, create the Carousel component.
+- [x] Render an error message on the page for the user, if the network request to fetch articles fails.
 
 ## Submission format
 
 Follow these steps for completing your project.
 
-- [ ] Submit a Pull-Request to merge `<firstName-lastName>` Branch into `main` branch (student's  Repo). **Please don't merge your own pull request**
-- [ ] Add your team lead as a reviewer on the pull-request
+- [x] Submit a Pull-Request to merge `<firstName-lastName>` Branch into `main` branch (student's  Repo). **Please don't merge your own pull request**
+- [x] Add your team lead as a reviewer on the pull-request
 - [ ] Your team lead will count the project as complete after receiving your pull-request
